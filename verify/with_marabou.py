@@ -6,7 +6,7 @@ import onnx
 import torch
 import tempfile
 from maraboupy import Marabou, MarabouCore
-from task_1.verify.read_vnnlib import (
+from verify.read_vnnlib import (
     Property, get_num_inputs_outputs, read_vnnlib_simple
 )
 import numpy as np
@@ -17,7 +17,7 @@ benchmarks_dir = Path("/home/yizhak/Research/Code/vnncomp2022_benchmarks/benchma
 # onnx_path = benchmarks_dir / "mnist_fc/onnx/mnist-net_256x2.onnx"
 # vnnlib_prop_path = benchmarks_dir / "mnist_fc/vnnlib/prop_9_0.05.vnnlib"
 torch_path = "/home/yizhak/Research/Code/gradual_training_for_verification/mnist_net_general_128_64.pth"
-from task_1.task_1_utils import FullyConnected
+from utils import FullyConnected
 tnet = FullyConnected(784,10,[128,64])
 tnet.load_state_dict(torch.load(torch_path))
 

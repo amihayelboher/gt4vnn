@@ -1,30 +1,21 @@
 import torch
 import torch.nn as nn
-from os.path import exists
 import torch.optim as optim
-import torchvision
-import torchvision.transforms as transforms
-from pathlib import Path
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.dirname(os.curdir)))
-from task_1.task_1_utils import FullyConnected
-from task_1.task_1_config import input_size, output_size, hidden_sizes, DATA_DIR
+from networks import network_factory
+from data_loaders import get_train_loader
+from config import input_size, output_size, hidden_sizes
 
 
-def train_neural_network(hidden_sizes):
-    # MNIST data loading and preprocessing
-    transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
-    mnist_dir = "/home/azencot_group/datasets/mnist"#DATA_DIR  # / "mnist"
-    do_download = not exists(mnist_dir)
-    trainset = torchvision.datasets.MNIST(root=mnist_dir, train=True, download=do_download, transform=transform)
-    trainloader = torch.utils.data.DataLoader(trainset, batch_size=4, shuffle=True, num_workers=2)
-
-    net = FullyConnected(input_size, output_size, hidden_sizes)
+def train_neural_network(network_type, input_size, output_size, hidden_sizes):
+    trainloader = get_train_loader()
+    net = network_factory(network_type, input_size, output_size, hidden_sizes)
 
     # Loss function and optimizer
     criterion = nn.CrossEntropyLoss()
-    optim_parameters_list = [
+    optim_params_list = [
         [{'params': net.model[0].parameters(), 'lr': 0.001},
          {'params': net.model[2].parameters(), 'lr': 0.0},
          {'params': net.model[4].parameters(), 'lr': 0.0},],
@@ -36,7 +27,9 @@ def train_neural_network(hidden_sizes):
         #  {'params': net.model[2].parameters(), 'lr': 0.0},
         #  {'params': net.model[4].parameters(), 'lr': 0.001},]
     # ]
-    optimizers = [optim.SGD(op, lr=0.001, momentum=0.9) for op in optim_parameters_list]
+    optimizers = [
+        optim.SGD(op, lr=0.001, momentum=0.9) for op in optim_params_list
+    ]
 
     # Training loop
     opt_index = 0
@@ -66,7 +59,15 @@ def train_neural_network(hidden_sizes):
 
 
 if __name__ == "__main__":
-    save_path = f"mnist_net_GEN-GT_{'_'.join([str(s) for s in hidden_sizes])}.pth"
-    # Example usage with hidden layer sizes [128, 64]:
-    network = train_neural_network(hidden_sizes=hidden_sizes)
+    from test.test_accuracy import test_accuracy
+    from config import input_size, output_size, hidden_sizes
+
+    network_type = "fc"
+    training_type = "GEN-GT"
+    str_sizes = '_'.join([str(s) for s in hidden_sizes])
+    save_path = f"mnist_{network_type}_net_{training_type}_{str_sizes}.pth"
+    network = train_neural_network(
+        network_type, input_size, output_size, hidden_sizes
+    )
     torch.save(network.state_dict(), save_path)
+    test_accuracy(network_type, training_type)
