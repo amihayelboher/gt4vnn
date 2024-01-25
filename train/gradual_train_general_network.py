@@ -18,7 +18,7 @@ def train_neural_network(network_type, input_size, output_size, hidden_sizes):
     optim_params_list = [
         [{'params': net.model[0].parameters(), 'lr': 0.001},
          {'params': net.model[2].parameters(), 'lr': 0.0},
-         {'params': net.model[4].parameters(), 'lr': 0.0},],
+         {'params': net.model[4].parameters(), 'lr': 0.001},],
         [{'params': net.model[0].parameters(), 'lr': 0.0},
          {'params': net.model[2].parameters(), 'lr': 0.001},
          {'params': net.model[4].parameters(), 'lr': 0.001},]
@@ -33,7 +33,7 @@ def train_neural_network(network_type, input_size, output_size, hidden_sizes):
 
     # Training loop
     opt_index = 0
-    for epoch in range(2):  # Change the number of epochs as needed
+    for epoch in range(4):  # Change the number of epochs as needed
         running_loss = 0.0
         for i, data in enumerate(trainloader, 0):
             inputs, labels = data
@@ -48,7 +48,7 @@ def train_neural_network(network_type, input_size, output_size, hidden_sizes):
                 print('[%d, %5d] loss: %.3f' %
                       (epoch + 1, i + 1, running_loss / 2000))
                 running_loss = 0.0
-        if epoch == 0:
+        if epoch == 1:
             lrs_before = [pg['lr'] for pg in optimizers[opt_index].param_groups]
             opt_index += 1
             # optimizers[opt_index].param_groups[1]['lr'] = 0.001
@@ -59,6 +59,7 @@ def train_neural_network(network_type, input_size, output_size, hidden_sizes):
 
 
 if __name__ == "__main__":
+    sys.path.insert(0, sys.path[-1])
     from test.test_accuracy import test_accuracy
     from config import input_size, output_size, hidden_sizes
 

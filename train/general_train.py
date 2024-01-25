@@ -38,6 +38,7 @@ def train_neural_network(network_type, input_size, output_size, hidden_sizes):
 
 
 if __name__ == "__main__":
+    sys.path.insert(0, sys.path[-1])
     from test.test_accuracy import test_accuracy
     from config import input_size, output_size, hidden_sizes
 
