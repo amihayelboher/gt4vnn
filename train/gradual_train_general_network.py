@@ -1,3 +1,10 @@
+"""
+This file includes code that gradually trains neural network as follows:
+in the i'th stage, it trains only the i'th layer + classification layer
+the input is forwarded through all other hidden layers as well, but they are
+frozen
+"""
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
