@@ -10,3 +10,5 @@ hidden_sizes = [256, 256]  # List of hidden layer sizes
 print(f'env var: {os.environ.get("MNIST_DIR")}')
 DATA_DIR = Path(os.environ.get("MNIST_DIR") or '../../data/mnist/mnist')
 # MODELS_DIR = Path(os.environ.get("TRAINED_MODELS_DIR") or 'trained_models')
+
+TRAINING_EPSILON = 0.05

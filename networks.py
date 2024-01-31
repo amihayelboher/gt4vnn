@@ -28,26 +28,30 @@ class FullyConnectedSkipConnection(nn.Module):
         assert dup_or_init in ["dup", "init"], err_msg
         self.dup_or_init = dup_or_init
         self.model = None
+        self.classifiers = []  # classifiers (last layers) during the training
     
     def add_layer(self):
         if self.model is None:
+            clf = nn.Linear(self.hidden_size, self.output_size)
             self.model = nn.Sequential(
-                nn.Linear((self.input_size, self.hidden_size)),
+                nn.Linear(self.input_size, self.hidden_size),
                 nn.ReLU(),
-                nn.Linear((self.hidden_size, self.output_size)),
+                clf,
             )
+            self.classifiers.append(clf)
         else:
             # get the current layers
             layers = [l for l in self.model]
-            new_layer = nn.Linear((self.hidden_size, self.hidden_size))
+            new_layer = nn.Linear(self.hidden_size, self.hidden_size)
             # add the new layer
             if self.dup_or_init == "dup":
                 last_layer = deepcopy(layers[-1])
             else:  # self.dup_or_init == "init":
-                last_layer = nn.Linear((self.hidden_size, self.output_size))
+                last_layer = nn.Linear(self.hidden_size, self.output_size)
             layers = layers[:-1] + [new_layer, nn.ReLU(), last_layer]
             # create model
             self.model = nn.Sequential(*layers)
+            self.classifiers.append(last_layer)
 
     def forward(self, x):
         return self.model(x)
@@ -58,9 +62,11 @@ network_type2network_class = {
     "fc_sc_clf": FullyConnectedSkipConnection
 }
 
-def network_factory(network_type, input_size, output_size, hidden_sizes):
+def network_factory(
+    network_type, input_size, output_size, hidden_sizes, **kws
+):
     network_class = network_type2network_class[network_type]
-    return network_class(input_size, output_size, hidden_sizes)
+    return network_class(input_size, output_size, hidden_sizes, **kws)
 
 # code to load the network:
 # net_path = "mnist_net_general_128_64.pth"
