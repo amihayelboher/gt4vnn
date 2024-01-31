@@ -8,7 +8,6 @@ All other (first i-1) hidden layers are frozen.
 The classification layer can be:
 1) a duplicateion of the classification layer from the last stage or
 2) a newly initialized classification layer
-
 """
 
 import torch
@@ -86,8 +85,8 @@ if __name__ == "__main__":
     from test.test_accuracy import test_accuracy
     from config import input_size, output_size, hidden_sizes
 
-    network_type = "fc_sc_clf"
-    training_type = "SC-CL"
+    network_type = "fc_sc_clf"  # fully connected, skip connection, classifier
+    training_type = "SC-CL"  # cascade learning, cascade learning
     str_sizes = '_'.join([str(s) for s in hidden_sizes])
     save_path = f"mnist_{network_type}_net_{training_type}_{str_sizes}.pth"
     network = train_neural_network(
