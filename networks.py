@@ -76,6 +76,24 @@ class FullyConnectedSkipConnection(nn.Module):
         self.classifiers = nn.ModuleList(self.classifiers)
         self.active_layers = 1  # linear layers participating in forward
     
+    
+        self.intermediate_results = {}
+        # Register hooks to capture intermediate results
+        self._register_hooks()
+
+    def _register_hooks(self):
+        def hook_fn(module, input, output, layer_idx):
+            self.intermediate_results[layer_idx] = output
+
+        hooks = []
+        for layer_idx,layer in enumerate(self.layers):
+            hook = layer.register_forward_hook(
+                lambda module, input, output, 
+                layer_idx=layer_idx: hook_fn(module, input, output, layer_idx)
+            )
+            hooks.append(hook)
+        self._hooks = hooks
+
     def add_layer(self):
         if not self.layers:
             self.layers.extend([
@@ -93,9 +111,24 @@ class FullyConnectedSkipConnection(nn.Module):
             self.classifiers.append(last_layer)
 
     def forward(self, x):
+        self.intermediate_results = {}  # Clear previous results
+        layers_output = []
         for i in range(self.active_layers):
             x = nn.functional.relu(self.layers[i](x))
-        return self.classifiers[self.active_layers-1](x)
+            layers_output.append(x)
+        return self.classifiers[self.active_layers-1](sum(layers_output))
+    
+    def forward_ratios(self, x):
+        layers_output = []
+        for i in range(self.active_layers):
+            x = nn.functional.relu(self.layers[i](x))
+            layers_output.append(x)
+        classifier = self.classifiers[self.active_layers-1]
+        result = classifier(sum(layers_output))
+        winner = result.argmax()
+        partial_results = [classifier(out)[winner] for out in layers_output]
+        return [p/sum(partial_results) for p in partial_results]
+
 
     def activate_next_layer(self):
         # don't activate if all layers are activated
