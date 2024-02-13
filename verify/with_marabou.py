@@ -16,9 +16,10 @@ from pathlib import Path
 benchmarks_dir = Path("/home/yizhak/Research/Code/vnncomp2022_benchmarks/benchmarks/")
 # onnx_path = benchmarks_dir / "mnist_fc/onnx/mnist-net_256x2.onnx"
 # vnnlib_prop_path = benchmarks_dir / "mnist_fc/vnnlib/prop_9_0.05.vnnlib"
-torch_path = "/home/yizhak/Research/Code/gradual_training_for_verification/mnist_net_general_128_64.pth"
-from utils import FullyConnected
-tnet = FullyConnected(784,10,[128,64])
+torch_path = "/home/yizhak/Research/Code/gt4vnn/mnist_fc_sc_clf_net_SC-CL_256_256.pth"
+from networks import FullyConnectedSkipConnection
+from config import input_size, output_size, hidden_sizes
+tnet = FullyConnectedSkipConnection(input_size, output_size, hidden_sizes)
 tnet.load_state_dict(torch.load(torch_path))
 
 
@@ -70,7 +71,7 @@ def reshape_onnx_input_batch_to_one(onnx_model: onnx.ModelProto, new_batch_size=
     onnx_model.graph.output.extend([output_])
     onnx.checker.check_model(onnx_model)
     return onnx_model
-onet = convert_torch_to_onnx(tnet, (1, 784))
+onet = convert_torch_to_onnx(tnet, (1, input_size))
 onet = reshape_onnx_input_batch_to_one(onet)
 # load (onnx) network and (vnnlib) property
 # net, prop = mnistfc_query_from_vnnlibpath(vnnlib_prop_path, onnx_path)
@@ -103,7 +104,7 @@ def add_robustness_input_region(network, x, delta):
         network.setLowerBound(input_vars[i], x[i] - delta)
         network.setUpperBound(input_vars[i], x[i] + delta)
 x = np.array(list([0.1]*784))
-DELTA = 0.0001
+DELTA = 0.001
 add_robustness_input_region(mnet, x, delta=DELTA)
 
 # add doutput constraints (single runner or disjunction)
@@ -137,3 +138,4 @@ add_classification_output_condition(mnet, y, epsilon=EPSILON)
 ipq = mnet.getMarabouQuery()
 output_path = "/tmp/query.ipq"
 MarabouCore.saveQuery(ipq, str(output_path))
+# ./Marabou --input-query /tmp/query.ipq
