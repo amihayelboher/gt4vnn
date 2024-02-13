@@ -75,16 +75,13 @@ class FullyConnectedSkipConnection(nn.Module):
         self.layers = nn.ModuleList(self.layers)
         self.classifiers = nn.ModuleList(self.classifiers)
         self.active_layers = 1  # linear layers participating in forward
-    
-    
-        self.intermediate_results = {}
-        # Register hooks to capture intermediate results
+        self.intermediate_results = {}  # last forward() intermediate results
         self._register_hooks()
 
     def _register_hooks(self):
+        # capturing intermediate results by registering forwars pass hooks
         def hook_fn(module, input, output, layer_idx):
             self.intermediate_results[layer_idx] = output
-
         hooks = []
         for layer_idx,layer in enumerate(self.layers):
             hook = layer.register_forward_hook(
@@ -112,22 +109,24 @@ class FullyConnectedSkipConnection(nn.Module):
 
     def forward(self, x):
         self.intermediate_results = {}  # Clear previous results
-        layers_output = []
         for i in range(self.active_layers):
             x = nn.functional.relu(self.layers[i](x))
-            layers_output.append(x)
-        return self.classifiers[self.active_layers-1](sum(layers_output))
+        sum_ims = self.intermediate_results.values()
+        return self.classifiers[self.active_layers-1](sum(sum_ims))
     
-    def forward_ratios(self, x):
-        layers_output = []
-        for i in range(self.active_layers):
-            x = nn.functional.relu(self.layers[i](x))
-            layers_output.append(x)
-        classifier = self.classifiers[self.active_layers-1]
-        result = classifier(sum(layers_output))
-        winner = result.argmax()
-        partial_results = [classifier(out)[winner] for out in layers_output]
-        return [p/sum(partial_results) for p in partial_results]
+    # def get_forward_ratios(self, x, all_ratios=True):
+    #     # after loading a network active_layers = 0, so we change it by defualt
+    #     if all_ratios:  # change active_layers to get ratio for each layer
+    #         orig_active_layers = self.active_layers
+    #         self.active_layers = len(self.layers)
+    #     output = self.forward(x)
+    #     winner = output.argmax()
+    #     classifier = self.classifiers[self.active_layers-1]
+    #     im_preds = [classifier(ir)[winner] for ir in self.intermediate_results]
+    #     if all_ratios:  # restore self.active_layers
+    #         self.active_layers = orig_active_layers
+    #     assert sum(im_preds) == output[winner]
+    #     return [ip/sum(im_preds) for ip in im_preds]
 
 
     def activate_next_layer(self):
