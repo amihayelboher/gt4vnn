@@ -18,7 +18,10 @@ import sys
 sys.path.append(os.path.abspath(os.path.dirname(os.curdir)))
 from networks import network_factory
 from data_loaders import get_train_loader
-from config import input_size, output_size, hidden_sizes, EPOCH_DIFF
+from config import input_size, output_size, hidden_sizes, EPOCH2LOSS, SEED
+
+
+CGT = True  # True: continual gradual training, False: cascade learning
 
 
 def train_neural_network(
@@ -44,8 +47,18 @@ def train_neural_network(
             for layer in net.layers
         ]
         optimizer = optim.SGD(optim_params, lr=0.0, momentum=0.9)
-        optimizer.param_groups[layer_index]['lr'] = 0.001
+        if CGT:
+            for i in range(layer_index+1):
+                optimizer.param_groups[i]['lr'] = 0.001*(1/10**(layer_index-i))
+            # for i in range(layer_index+1):
+            #     optimizer.param_groups[i]['lr'] = 0.001
+        else:  # cascade learning
+            optimizer.param_groups[layer_index]['lr'] = 0.001
         
+        # log learning rates
+        lrs = [pg['lr'] for pg in optimizer.param_groups]
+        print(f'Learning rates: {lrs}')
+
         # train layer until convergence
         prev_loss = torch.inf
         epoch = 0
@@ -68,21 +81,22 @@ def train_neural_network(
                     running_loss = 0.0
             print(f"running_loss={running_loss}")
             print(f"prev_loss={prev_loss}")
-            if abs(running_loss - prev_loss) < 100:
-            # if abs(running_loss - prev_loss) < EPOCH_DIFF:
+            if abs(running_loss - prev_loss) < EPOCH2LOSS[layer_index]:
+                print(f"STOP: abs(running_loss-prev_loss)={abs(running_loss-prev_loss)}<{EPOCH2LOSS[layer_index]}")
+            # if abs(running_loss - prev_loss) < EPOCH2LOSS[layer_index]:
                 break
             prev_loss = running_loss
             epoch += 1
         print(f'Finished Training layer {layer_index} in {epoch} epochs')
-        # log learning rates update
-        lrs = [pg['lr'] for pg in optimizer.param_groups]
-        print(f'Learning rates update: {lrs}')
         net.activate_next_layer()
     print('Finished Training')
     return net
 
 
 if __name__ == "__main__":
+    import random
+    random.seed(SEED)
+    torch.manual_seed(SEED)
     sys.path.insert(0, sys.path[-1])
     from test.test_accuracy import test_accuracy
     from config import input_size, output_size, hidden_sizes

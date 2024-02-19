@@ -1,6 +1,10 @@
 import torch.nn as nn
 from copy import deepcopy
 
+
+# if true, then initialize the layers randomly, and forward input through all layers
+RAND_INIT_AND_FORWARD = True
+
 class FullyConnected(nn.Module):
     def __init__(self, input_size, output_size, hidden_sizes):
         super(FullyConnected, self).__init__()
@@ -109,7 +113,10 @@ class FullyConnectedSkipConnection(nn.Module):
 
     def forward(self, x):
         self.intermediate_results = {}  # Clear previous results
-        for i in range(self.active_layers):
+        forward_layers = self.active_layers
+        if RAND_INIT_AND_FORWARD:
+            forward_layers = len(self.layers)
+        for i in range(forward_layers):
             x = nn.functional.relu(self.layers[i](x))
         sum_ims = self.intermediate_results.values()
         return self.classifiers[self.active_layers-1](sum(sum_ims))
@@ -136,12 +143,44 @@ class FullyConnectedSkipConnection(nn.Module):
         if self.dup_or_init == "dup":
             # duplicate by adding current clf weights to zero weights
             cur_clf = self.classifiers[self.active_layers-1]
-            print(len(self.classifiers))
-            print(self.active_layers)
+            print(f"len(self.classifiers)={len(self.classifiers)}")
+            print(f"self.active_layers={self.active_layers}")
             next_clf = self.classifiers[self.active_layers]
             next_clf.weight.data += cur_clf.weight.data.detach()
             next_clf.bias.data += cur_clf.bias.data.detach()
         self.active_layers += 1
+
+
+# class SequentialWithSkipConnection(nn.Module):
+#     """
+#     a sequential network that is used to ease the translation from 
+#     FullyConnectedSkipConnection (from now on FCSC) to onnx.
+#     __init__ gets a triple (FCSC network, number of layers, classifier index),
+#     and generate a sequential network with the relevant layers and clasifier.
+#     default value for the number of layers is the number of active layers.
+#     default value for classifier index is -1 (last classifier).
+#     """
+#     def __init__(self, fcsc_net, num_of_layers, clf_index):
+#         super(SequentialWithSkipConnection, self).__init__()
+#         self.input_size = fcsc_net.input_size
+#         self.output_size = fcsc_net.output_size
+#         self.hidden_sizes = fcsc_net.hidden_sizes
+#         self.hidden_size = fcsc_net.hidden_sizes[0]
+#         if clf_index is None:
+#             clf_index = -1
+#         if num_of_layers is None:
+#             num_of_layers = fcsc_net.active_layers
+#         self.model = nn.Sequential(
+#             *fcsc_net.layers[:num_of_layers],
+#             fcsc_net.classifiers[clf_index]
+#         )
+
+#     def forward(self):
+#         cum_sum = 0.0
+#         for layer in self.model[:-1]:
+#             x = layer(x)
+#             cum_sum += x
+#         return self.layers[-1](cum_sum)
 
 
 network_type2network_class = {

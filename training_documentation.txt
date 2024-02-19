@@ -1,0 +1,67 @@
+This document include details about some training methods, parameters and results:
+
+CL - cascade learning (adding new layer after convergence of last layer)
+    - train only the i'th layer
+CGT - cascade learning, but train all preceding layers
+    - with equal learning rate
+    - with exponential degrade in learning rate
+Regarding CL, we examine 2 options how to train the network:
+    1. layer i is not exist until stage i (forward pass does not include it)
+    2. layer i is part of the forward pass but the learning rate is 0
+    We saw that option 2 acheives better accuracy
+
+
+# ========================================================
+# forward through active layers
+# CL, 2 256 layers: Accuracy on the MNIST test set: 91.26%
+# CL, 2 50 layers: Accuracy on the MNIST test set: 91.45%
+# CL, 4 50 layers: Accuracy on the MNIST test set: 86.73%
+# CL, 4 256 layers:
+# CL, 6 256 layers:
+# CGT, 4 256 layers: Accuracy on the MNIST test set: 88.11%
+# CGT with 1/10**(layer_index-i), 2 256 layers: 91.32% (MNIST)
+# CGT with 1/10**(layer_index-i), 4 256 layers: 91.31% (MNIST)
+# CGT with 1/10**(layer_index-i), 6 256 layers: 91.05% (MNIST)
+
+# ========================================================
+# forward through all layers, lr=0 for every layer > i
+# EPOCH2LOSS = {0:100, 1:20, 2:10, 3:5, 4:2, 5:1, 6:0.5}
+# ------------------------------------------
+# lr = 0.001 for every layer < i
+# 2: Accuracy on the MNIST test set: 92.32%
+# 4: Accuracy on the MNIST test set: 96.52%
+# 6: Accuracy on the MNIST test set: 97.11%
+
+# ------------------------------------------
+# lr degrades exponentially for every layer < i
+# 2: Accuracy on the MNIST test set: 92.04%
+# 4: Accuracy on the MNIST test set: 92.29%
+# 6: Accuracy on the MNIST test set: 92.51%
+
+# ------------------------------------------
+# lr = 0 for every layer < i
+# 2: Accuracy on the MNIST test set: 91.86%
+# 4: Accuracy on the MNIST test set: 91.99%
+# 6: Accuracy on the MNIST test set: 92.26%
+
+
+We saw that the best results are when lr = 0.001 for every layer < i.
+We saw that there were more epochs in that option (because of the specific values of EPOCH2LOSS).
+On the other hand, we saw that smaller part of the output comes from the first layers.
+So our gues was that we have to update EPOCH2LOSS to add some epochs to the training.
+
+# ------------------------------------------
+# EPOCH2LOSS = {0:10, 1:5, 2:2, 3:1, 4:0.5, 5:0.25, 6:0.125}
+# lr = 0 for every layer < i
+# 2: Accuracy on the MNIST test set: 93.00%
+# 4: Accuracy on the MNIST test set: 94.91%
+# 6: Accuracy on the MNIST test set: 94.78%
+
+# ------------------------------------------
+# EPOCH2LOSS = {0:10, 1:5, 2:2, 3:1, 4:0.5, 5:0.25, 6:0.125}
+# lr degrades exponentially for every layer < i
+# 2: Accuracy on the MNIST test set: 93.63%
+# 4: Accuracy on the MNIST test set: 95.45%
+# 6: Accuracy on the MNIST test set: 95.46%
+
+The last result is currently the best one.
