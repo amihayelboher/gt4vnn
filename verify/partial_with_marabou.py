@@ -16,13 +16,18 @@ from pathlib import Path
 benchmarks_dir = Path("/home/yizhak/Research/Code/vnncomp2022_benchmarks/benchmarks/")
 # onnx_path = benchmarks_dir / "mnist_fc/onnx/mnist-net_256x2.onnx"
 # vnnlib_prop_path = benchmarks_dir / "mnist_fc/vnnlib/prop_9_0.05.vnnlib"
-torch_path = "/home/yizhak/Research/Code/gt4vnn/mnist_fc_sc_clf_net_SC-CL_256_256.pth"
+torch_path = "/home/yizhak/Research/Code/gt4vnn/mnist_fc_sc_clf_net_SC-CL_256_256_256_256.pth"
 from networks import FullyConnectedSkipConnection
 from config import input_size, output_size, hidden_sizes
 tnet = FullyConnectedSkipConnection(input_size, output_size, hidden_sizes)
 tnet.load_state_dict(torch.load(torch_path))
 
-
+max_layer_to_check = 2
+assert max_layer_to_check < len(tnet.layers)
+partial_net = torch.nn.Sequential(
+    tnet.layers[:max_layer_to_check] + [tnet.classifiers[-1]]
+)
+tnet = partial_net
 
 # def mnistfc_query_from_vnnlibpath(prop_path, onnx_path):
 #     """use the code of stanley bak to read vnnlib files"""
