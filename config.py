@@ -3,12 +3,14 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
-
-SEED = 2024
-DATASET = "MNIST"
 # enable to use export MNIST_DIR=/path/to/mnist/data/dir
 print(f'env var: {os.environ.get("MNIST_DIR")}')
 print(f'env var: {os.environ.get("CIFAR10_DIR")}')
+
+SEED = 2024
+BATCH_SIZE = 64
+DATASET = "MNIST"
+PROPERTY_FORMAT = "adversarial"  # "vnnlib"
 
 if DATASET == "MNIST":
     input_size = 28 * 28  # MNIST image size
@@ -24,7 +26,6 @@ elif DATASET == "CIFAR10":
 else:
     raise Exception(f"Unknown dataset: {DATASET}")
 hidden_sizes = [256, 256, 256, 256, 256, 256]  # List of hidden layer sizes
-hidden_sizes = [256, 256]  # List of hidden layer sizes
 # hidden_sizes = [50, 50, 50, 50]  # List of hidden layer sizes
 
 # MODELS_DIR = Path(os.environ.get("TRAINED_MODELS_DIR") or 'trained_models')

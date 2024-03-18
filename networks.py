@@ -151,36 +151,36 @@ class FullyConnectedSkipConnection(nn.Module):
         self.active_layers += 1
 
 
-# class SequentialWithSkipConnection(nn.Module):
-#     """
-#     a sequential network that is used to ease the translation from 
-#     FullyConnectedSkipConnection (from now on FCSC) to onnx.
-#     __init__ gets a triple (FCSC network, number of layers, classifier index),
-#     and generate a sequential network with the relevant layers and clasifier.
-#     default value for the number of layers is the number of active layers.
-#     default value for classifier index is -1 (last classifier).
-#     """
-#     def __init__(self, fcsc_net, num_of_layers, clf_index):
-#         super(SequentialWithSkipConnection, self).__init__()
-#         self.input_size = fcsc_net.input_size
-#         self.output_size = fcsc_net.output_size
-#         self.hidden_sizes = fcsc_net.hidden_sizes
-#         self.hidden_size = fcsc_net.hidden_sizes[0]
-#         if clf_index is None:
-#             clf_index = -1
-#         if num_of_layers is None:
-#             num_of_layers = fcsc_net.active_layers
-#         self.model = nn.Sequential(
-#             *fcsc_net.layers[:num_of_layers],
-#             fcsc_net.classifiers[clf_index]
-#         )
+class SequentialWithSkipConnection(nn.Module):
+    """
+    a sequential network that is used to ease the translation from 
+    FullyConnectedSkipConnection (from now on FCSC) to onnx.
+    __init__ gets a triple (FCSC network, number of layers, classifier index),
+    and generate a sequential network with the relevant layers and clasifier.
+    default value for the number of layers is the number of active layers.
+    default value for classifier index is -1 (last classifier).
+    """
+    def __init__(self, fcsc_net, num_of_layers, clf_index):
+        super(SequentialWithSkipConnection, self).__init__()
+        self.input_size = fcsc_net.input_size
+        self.output_size = fcsc_net.output_size
+        self.hidden_sizes = fcsc_net.hidden_sizes
+        self.hidden_size = fcsc_net.hidden_sizes[0]
+        if clf_index is None:
+            clf_index = -1
+        if num_of_layers is None:
+            num_of_layers = fcsc_net.active_layers
+        self.model = nn.Sequential(
+            *fcsc_net.layers[:num_of_layers],
+            fcsc_net.classifiers[clf_index]
+        )
 
-#     def forward(self):
-#         cum_sum = 0.0
-#         for layer in self.model[:-1]:
-#             x = layer(x)
-#             cum_sum += x
-#         return self.layers[-1](cum_sum)
+    def forward(self, x):
+        cum_sum = 0.0
+        for layer in self.model[:-1]:
+            x = layer(x)
+            cum_sum += x
+        return self.model[-1](cum_sum)
 
 
 network_type2network_class = {

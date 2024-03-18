@@ -1,0 +1,1176 @@
+sample=182, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.384015798568726, time_p: 0.3805668354034424
+sample=182, epsilon=0.0005
+res_f: unsat, res_p: sat, time_f: 0.4208717346191406, time_p: 0.3872990608215332
+sample=182, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4323897361755371, time_p: 0.3162083625793457
+sample=183, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.192999601364136, time_p: 0.38276028633117676
+sample=183, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4249265193939209, time_p: 0.31287431716918945
+sample=183, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4185314178466797, time_p: 0.3226664066314697
+sample=184, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.70050311088562, time_p: 0.4535372257232666
+sample=184, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4425623416900635, time_p: 0.337111234664917
+sample=184, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4450399875640869, time_p: 0.3372833728790283
+sample=185, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.575310707092285, time_p: 0.40682339668273926
+sample=185, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.6461982727050781, time_p: 0.3217172622680664
+sample=185, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4877147674560547, time_p: 0.31560683250427246
+sample=186, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.10957932472229, time_p: 0.4440898895263672
+sample=186, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4952411651611328, time_p: 0.3210775852203369
+sample=186, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4738762378692627, time_p: 0.30706334114074707
+sample=187, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.7914886474609375, time_p: 0.37223339080810547
+sample=187, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4506680965423584, time_p: 0.30807042121887207
+sample=187, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4115297794342041, time_p: 0.30785059928894043
+sample=188, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.2392401695251465, time_p: 0.4498167037963867
+sample=188, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.49179959297180176, time_p: 0.3213224411010742
+sample=188, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.45068931579589844, time_p: 0.3136775493621826
+sample=189, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.245153188705444, time_p: 0.3828256130218506
+sample=189, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 3.897627353668213, time_p: 0.30631470680236816
+sample=189, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42235493659973145, time_p: 0.30910611152648926
+sample=190, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.00618314743042, time_p: 0.38019680976867676
+sample=190, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.41702914237976074, time_p: 0.30704283714294434
+sample=190, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4183061122894287, time_p: 0.31143927574157715
+sample=191, epsilon=0.35
+missing query
+sample=191, epsilon=0.0005
+missing query
+sample=191, epsilon=5e-05
+missing query
+sample=192, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.1854255199432373, time_p: 0.3804044723510742
+sample=192, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.5304996967315674, time_p: 0.3125889301300049
+sample=192, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4198899269104004, time_p: 0.3087656497955322
+sample=193, epsilon=0.35
+missing query
+sample=193, epsilon=0.0005
+missing query
+sample=193, epsilon=5e-05
+missing query
+sample=194, epsilon=0.35
+missing query
+sample=194, epsilon=0.0005
+missing query
+sample=194, epsilon=5e-05
+missing query
+sample=195, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.337311029434204, time_p: 0.3749668598175049
+sample=195, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4213600158691406, time_p: 0.3048055171966553
+sample=195, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4179246425628662, time_p: 0.31757307052612305
+sample=196, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.268728017807007, time_p: 0.3763720989227295
+sample=196, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4214308261871338, time_p: 0.30452632904052734
+sample=196, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41698336601257324, time_p: 0.3091614246368408
+sample=197, epsilon=0.35
+missing query
+sample=197, epsilon=0.0005
+missing query
+sample=197, epsilon=5e-05
+missing query
+sample=198, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.694502830505371, time_p: 0.3712284564971924
+sample=198, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4198265075683594, time_p: 0.30627918243408203
+sample=198, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41898441314697266, time_p: 0.3072197437286377
+sample=199, epsilon=0.35
+missing query
+sample=199, epsilon=0.0005
+missing query
+sample=199, epsilon=5e-05
+missing query
+sample=200, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.592836141586304, time_p: 0.38399219512939453
+sample=200, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4233269691467285, time_p: 0.3055853843688965
+sample=200, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4167635440826416, time_p: 0.3085784912109375
+sample=201, epsilon=0.35
+missing query
+sample=201, epsilon=0.0005
+missing query
+sample=201, epsilon=5e-05
+missing query
+sample=202, epsilon=0.35
+missing query
+sample=202, epsilon=0.0005
+missing query
+sample=202, epsilon=5e-05
+missing query
+sample=203, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.893235921859741, time_p: 0.37915945053100586
+sample=203, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4242088794708252, time_p: 0.3058967590332031
+sample=203, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4207775592803955, time_p: 0.3184983730316162
+sample=204, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.5187599658966064, time_p: 0.37430620193481445
+sample=204, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.5305936336517334, time_p: 0.5759158134460449
+sample=204, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4193251132965088, time_p: 0.3064453601837158
+sample=205, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 2.8907222747802734, time_p: 0.3817582130432129
+sample=205, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4144887924194336, time_p: 0.3034219741821289
+sample=205, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41582727432250977, time_p: 0.30750346183776855
+sample=206, epsilon=0.35
+missing query
+sample=206, epsilon=0.0005
+missing query
+sample=206, epsilon=5e-05
+missing query
+sample=207, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.38323187828064, time_p: 0.37404966354370117
+sample=207, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4192321300506592, time_p: 0.33268094062805176
+sample=207, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41851043701171875, time_p: 0.3068993091583252
+sample=208, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.316909313201904, time_p: 0.3801875114440918
+sample=208, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4163064956665039, time_p: 0.304415225982666
+sample=208, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4132416248321533, time_p: 0.3074328899383545
+sample=209, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.600692987442017, time_p: 0.37624216079711914
+sample=209, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4178621768951416, time_p: 0.30778956413269043
+sample=209, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42434144020080566, time_p: 0.3063485622406006
+sample=210, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.364184617996216, time_p: 0.37591075897216797
+sample=210, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.41642045974731445, time_p: 0.30710887908935547
+sample=210, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4163639545440674, time_p: 0.30553174018859863
+sample=211, epsilon=0.35
+missing query
+sample=211, epsilon=0.0005
+missing query
+sample=211, epsilon=5e-05
+missing query
+sample=212, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.6354546546936035, time_p: 0.37622714042663574
+sample=212, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4205203056335449, time_p: 0.30748462677001953
+sample=212, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4227104187011719, time_p: 0.3078896999359131
+sample=213, epsilon=0.35
+missing query
+sample=213, epsilon=0.0005
+missing query
+sample=213, epsilon=5e-05
+missing query
+sample=214, epsilon=0.35
+missing query
+sample=214, epsilon=0.0005
+missing query
+sample=214, epsilon=5e-05
+missing query
+sample=215, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.382551193237305, time_p: 0.37864017486572266
+sample=215, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4163093566894531, time_p: 0.3057382106781006
+sample=215, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42345213890075684, time_p: 0.31124424934387207
+sample=216, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.341237306594849, time_p: 0.37221574783325195
+sample=216, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.41381382942199707, time_p: 0.35526537895202637
+sample=216, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4645063877105713, time_p: 0.30586862564086914
+sample=217, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.4525957107543945, time_p: 0.3793163299560547
+sample=217, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.42076563835144043, time_p: 0.3069911003112793
+sample=217, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41960763931274414, time_p: 0.30280208587646484
+sample=218, epsilon=0.35
+missing query
+sample=218, epsilon=0.0005
+missing query
+sample=218, epsilon=5e-05
+missing query
+sample=219, epsilon=0.35
+missing query
+sample=219, epsilon=0.0005
+missing query
+sample=219, epsilon=5e-05
+missing query
+sample=220, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.1154942512512207, time_p: 0.37621617317199707
+sample=220, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.515352725982666, time_p: 0.3066258430480957
+sample=220, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42170071601867676, time_p: 0.30855822563171387
+sample=221, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.023158311843872, time_p: 0.37705230712890625
+sample=221, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4708991050720215, time_p: 0.30567455291748047
+sample=221, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42568469047546387, time_p: 0.30333375930786133
+sample=222, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.7382118701934814, time_p: 0.3797624111175537
+sample=222, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.42774152755737305, time_p: 0.3060576915740967
+sample=222, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.413907527923584, time_p: 0.3110194206237793
+sample=223, epsilon=0.35
+missing query
+sample=223, epsilon=0.0005
+missing query
+sample=223, epsilon=5e-05
+missing query
+sample=224, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.826305150985718, time_p: 0.3738119602203369
+sample=224, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4196958541870117, time_p: 0.30580925941467285
+sample=224, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4155094623565674, time_p: 0.30585193634033203
+sample=225, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.218639135360718, time_p: 0.37512636184692383
+sample=225, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.43404269218444824, time_p: 0.30539822578430176
+sample=225, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.44036269187927246, time_p: 0.3197777271270752
+sample=226, epsilon=0.35
+missing query
+sample=226, epsilon=0.0005
+missing query
+sample=226, epsilon=5e-05
+missing query
+sample=227, epsilon=0.35
+missing query
+sample=227, epsilon=0.0005
+missing query
+sample=227, epsilon=5e-05
+missing query
+sample=228, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.663450002670288, time_p: 0.374453067779541
+sample=228, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4201653003692627, time_p: 0.3056974411010742
+sample=228, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4194943904876709, time_p: 0.30364131927490234
+sample=229, epsilon=0.35
+missing query
+sample=229, epsilon=0.0005
+missing query
+sample=229, epsilon=5e-05
+missing query
+sample=230, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.726243495941162, time_p: 0.3724024295806885
+sample=230, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.413311243057251, time_p: 0.31047797203063965
+sample=230, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41655683517456055, time_p: 0.30687618255615234
+sample=231, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.6351640224456787, time_p: 0.37356090545654297
+sample=231, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4207496643066406, time_p: 0.306546688079834
+sample=231, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.413571834564209, time_p: 0.3068687915802002
+sample=232, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.638943433761597, time_p: 0.3739356994628906
+sample=232, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 6.462169408798218, time_p: 0.3063628673553467
+sample=232, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 1.5061421394348145, time_p: 0.31316161155700684
+sample=233, epsilon=0.35
+missing query
+sample=233, epsilon=0.0005
+missing query
+sample=233, epsilon=5e-05
+missing query
+sample=234, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.670478582382202, time_p: 0.5104072093963623
+sample=234, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.6614539623260498, time_p: 0.3122873306274414
+sample=234, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4287879467010498, time_p: 0.3058750629425049
+sample=235, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.736722230911255, time_p: 0.4969642162322998
+sample=235, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4988551139831543, time_p: 0.31305480003356934
+sample=235, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4296410083770752, time_p: 0.3061347007751465
+sample=236, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.478373289108276, time_p: 0.3888542652130127
+sample=236, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4483780860900879, time_p: 0.3156931400299072
+sample=236, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4412703514099121, time_p: 0.3288140296936035
+sample=237, epsilon=0.35
+missing query
+sample=237, epsilon=0.0005
+missing query
+sample=237, epsilon=5e-05
+missing query
+sample=238, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.228391647338867, time_p: 0.4041101932525635
+sample=238, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.431657075881958, time_p: 0.3105907440185547
+sample=238, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.439624547958374, time_p: 0.3186213970184326
+sample=239, epsilon=0.35
+missing query
+sample=239, epsilon=0.0005
+missing query
+sample=239, epsilon=5e-05
+missing query
+sample=240, epsilon=0.35
+TimeoutExpired: 240, 0.35
+sample=240, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.5561404228210449, time_p: 0.3967866897583008
+sample=240, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.47120118141174316, time_p: 0.36595726013183594
+sample=241, epsilon=0.35
+missing query
+sample=241, epsilon=0.0005
+missing query
+sample=241, epsilon=5e-05
+missing query
+sample=242, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.9638352394104, time_p: 0.4957461357116699
+sample=242, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.5261712074279785, time_p: 0.3708987236022949
+sample=242, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5469157695770264, time_p: 0.39919114112854004
+sample=243, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 8.329301834106445, time_p: 0.45232367515563965
+sample=243, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.47559690475463867, time_p: 0.3579986095428467
+sample=243, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4846682548522949, time_p: 0.3643825054168701
+sample=244, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.162777900695801, time_p: 0.4442293643951416
+sample=244, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4793970584869385, time_p: 0.3563249111175537
+sample=244, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.48718976974487305, time_p: 0.36657238006591797
+sample=245, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.730232000350952, time_p: 0.40392446517944336
+sample=245, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4825572967529297, time_p: 0.3593113422393799
+sample=245, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5043754577636719, time_p: 0.33789753913879395
+sample=246, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 13.408018589019775, time_p: 0.4390530586242676
+sample=246, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4866459369659424, time_p: 0.3975667953491211
+sample=246, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.49251770973205566, time_p: 0.33403825759887695
+sample=247, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 7.043604612350464, time_p: 0.4501521587371826
+sample=247, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4829220771789551, time_p: 0.3681333065032959
+sample=247, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.49193286895751953, time_p: 0.37496447563171387
+sample=248, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.225351095199585, time_p: 0.4341559410095215
+sample=248, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.48926854133605957, time_p: 0.36199164390563965
+sample=248, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.47522664070129395, time_p: 0.35462284088134766
+sample=249, epsilon=0.35
+missing query
+sample=249, epsilon=0.0005
+missing query
+sample=249, epsilon=5e-05
+missing query
+sample=250, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.181601285934448, time_p: 0.4434194564819336
+sample=250, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.483445405960083, time_p: 0.35341405868530273
+sample=250, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.487659215927124, time_p: 0.3635873794555664
+sample=251, epsilon=0.35
+missing query
+sample=251, epsilon=0.0005
+missing query
+sample=251, epsilon=5e-05
+missing query
+sample=252, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.164253234863281, time_p: 0.43999528884887695
+sample=252, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.48165392875671387, time_p: 0.359668493270874
+sample=252, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.49081921577453613, time_p: 0.36540699005126953
+sample=253, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.780998706817627, time_p: 0.45526742935180664
+sample=253, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.48381853103637695, time_p: 0.364227294921875
+sample=253, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.478381872177124, time_p: 0.36647725105285645
+sample=254, epsilon=0.35
+missing query
+sample=254, epsilon=0.0005
+missing query
+sample=254, epsilon=5e-05
+missing query
+sample=255, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.401062250137329, time_p: 0.3777737617492676
+sample=255, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.527085781097412, time_p: 0.31075239181518555
+sample=255, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42063283920288086, time_p: 0.3075101375579834
+sample=256, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.936988830566406, time_p: 0.3889424800872803
+sample=256, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.41741108894348145, time_p: 0.31578946113586426
+sample=256, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41581273078918457, time_p: 0.30615997314453125
+sample=257, epsilon=0.35
+missing query
+sample=257, epsilon=0.0005
+missing query
+sample=257, epsilon=5e-05
+missing query
+sample=258, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.5152628421783447, time_p: 0.3775210380554199
+sample=258, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.42528557777404785, time_p: 0.3647782802581787
+sample=258, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4184303283691406, time_p: 0.31909918785095215
+sample=259, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.7952563762664795, time_p: 0.3738422393798828
+sample=259, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.45351433753967285, time_p: 0.36072206497192383
+sample=259, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4180014133453369, time_p: 0.3131368160247803
+sample=260, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 2.7000439167022705, time_p: 0.3729438781738281
+sample=260, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.5316879749298096, time_p: 0.30704331398010254
+sample=260, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42336130142211914, time_p: 0.3071160316467285
+sample=261, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.3809032440185547, time_p: 0.37206363677978516
+sample=261, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4150114059448242, time_p: 0.3155670166015625
+sample=261, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41344189643859863, time_p: 0.30671215057373047
+sample=262, epsilon=0.35
+missing query
+sample=262, epsilon=0.0005
+missing query
+sample=262, epsilon=5e-05
+missing query
+sample=263, epsilon=0.35
+missing query
+sample=263, epsilon=0.0005
+missing query
+sample=263, epsilon=5e-05
+missing query
+sample=264, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.008913516998291, time_p: 0.3767125606536865
+sample=264, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.5026500225067139, time_p: 0.3504447937011719
+sample=264, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4804952144622803, time_p: 0.30869245529174805
+sample=265, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.473708868026733, time_p: 0.3767387866973877
+sample=265, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.5211176872253418, time_p: 0.3054943084716797
+sample=265, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42075634002685547, time_p: 0.3066732883453369
+sample=266, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.226521253585815, time_p: 0.6161255836486816
+sample=266, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.42742466926574707, time_p: 0.3110654354095459
+sample=266, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4222273826599121, time_p: 0.30775880813598633
+sample=267, epsilon=0.35
+missing query
+sample=267, epsilon=0.0005
+missing query
+sample=267, epsilon=5e-05
+missing query
+sample=268, epsilon=0.35
+missing query
+sample=268, epsilon=0.0005
+missing query
+sample=268, epsilon=5e-05
+missing query
+sample=269, epsilon=0.35
+missing query
+sample=269, epsilon=0.0005
+missing query
+sample=269, epsilon=5e-05
+missing query
+sample=270, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.847111225128174, time_p: 0.3719475269317627
+sample=270, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.41643738746643066, time_p: 0.30531811714172363
+sample=270, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4336814880371094, time_p: 0.3063392639160156
+sample=271, epsilon=0.35
+missing query
+sample=271, epsilon=0.0005
+missing query
+sample=271, epsilon=5e-05
+missing query
+sample=272, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.3501410484313965, time_p: 0.4328179359436035
+sample=272, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.45902085304260254, time_p: 0.31078505516052246
+sample=272, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.49773669242858887, time_p: 0.31708288192749023
+sample=273, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.7529075145721436, time_p: 0.3757972717285156
+sample=273, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.49228835105895996, time_p: 0.30745697021484375
+sample=273, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.46385955810546875, time_p: 0.33542323112487793
+sample=274, epsilon=0.35
+missing query
+sample=274, epsilon=0.0005
+missing query
+sample=274, epsilon=5e-05
+missing query
+sample=275, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.462803363800049, time_p: 0.39864373207092285
+sample=275, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.43811893463134766, time_p: 0.30689549446105957
+sample=275, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4217495918273926, time_p: 0.30417537689208984
+sample=276, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.930350303649902, time_p: 0.3726649284362793
+sample=276, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4232921600341797, time_p: 0.30456995964050293
+sample=276, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4246053695678711, time_p: 0.3072350025177002
+sample=277, epsilon=0.35
+missing query
+sample=277, epsilon=0.0005
+missing query
+sample=277, epsilon=5e-05
+missing query
+sample=278, epsilon=0.35
+missing query
+sample=278, epsilon=0.0005
+missing query
+sample=278, epsilon=5e-05
+missing query
+sample=279, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.737202882766724, time_p: 0.37854552268981934
+sample=279, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.45937085151672363, time_p: 0.31617259979248047
+sample=279, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41994810104370117, time_p: 0.30400729179382324
+sample=280, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.202329397201538, time_p: 0.3679921627044678
+sample=280, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4244389533996582, time_p: 0.30301785469055176
+sample=280, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4210820198059082, time_p: 0.3706326484680176
+sample=281, epsilon=0.35
+missing query
+sample=281, epsilon=0.0005
+missing query
+sample=281, epsilon=5e-05
+missing query
+sample=282, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.146991491317749, time_p: 0.3776545524597168
+sample=282, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4194474220275879, time_p: 0.30393409729003906
+sample=282, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4190812110900879, time_p: 0.30562400817871094
+sample=283, epsilon=0.35
+missing query
+sample=283, epsilon=0.0005
+missing query
+sample=283, epsilon=5e-05
+missing query
+sample=284, epsilon=0.35
+missing query
+sample=284, epsilon=0.0005
+missing query
+sample=284, epsilon=5e-05
+missing query
+sample=285, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.075688362121582, time_p: 0.37269067764282227
+sample=285, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4156348705291748, time_p: 0.3040590286254883
+sample=285, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5758140087127686, time_p: 0.3497452735900879
+sample=286, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 2.2130446434020996, time_p: 0.3780333995819092
+sample=286, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 5.894486904144287, time_p: 0.31133341789245605
+sample=286, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4204721450805664, time_p: 0.3074991703033447
+sample=287, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.6904988288879395, time_p: 0.39105772972106934
+sample=287, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.43139171600341797, time_p: 0.3109900951385498
+sample=287, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.43077874183654785, time_p: 0.32767796516418457
+sample=288, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.857813596725464, time_p: 0.3964087963104248
+sample=288, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.44515442848205566, time_p: 0.31497764587402344
+sample=288, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.43788576126098633, time_p: 0.3297302722930908
+sample=289, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.5670270919799805, time_p: 0.3949165344238281
+sample=289, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.438601016998291, time_p: 0.3097870349884033
+sample=289, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4538145065307617, time_p: 0.3193674087524414
+sample=290, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.060425281524658, time_p: 0.40905046463012695
+sample=290, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.44010114669799805, time_p: 0.34530091285705566
+sample=290, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.44107866287231445, time_p: 0.33046483993530273
+sample=291, epsilon=0.35
+missing query
+sample=291, epsilon=0.0005
+missing query
+sample=291, epsilon=5e-05
+missing query
+sample=292, epsilon=0.35
+missing query
+sample=292, epsilon=0.0005
+missing query
+sample=292, epsilon=5e-05
+missing query
+sample=293, epsilon=0.35
+missing query
+sample=293, epsilon=0.0005
+missing query
+sample=293, epsilon=5e-05
+missing query
+sample=294, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.414467811584473, time_p: 0.39482736587524414
+sample=294, epsilon=0.0005
+res_f: unsat, res_p: sat, time_f: 0.4206576347351074, time_p: 0.41245460510253906
+sample=294, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41996049880981445, time_p: 0.31223011016845703
+sample=295, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.8202250003814697, time_p: 0.38468170166015625
+sample=295, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.44598984718322754, time_p: 0.30611443519592285
+sample=295, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42780232429504395, time_p: 0.3068528175354004
+sample=296, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.042301416397095, time_p: 0.3846468925476074
+sample=296, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4125213623046875, time_p: 0.30602312088012695
+sample=296, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.420849084854126, time_p: 0.3112640380859375
+sample=297, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 2.8968703746795654, time_p: 0.3733484745025635
+sample=297, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4294776916503906, time_p: 0.30818796157836914
+sample=297, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4206554889678955, time_p: 0.30849504470825195
+sample=298, epsilon=0.35
+missing query
+sample=298, epsilon=0.0005
+missing query
+sample=298, epsilon=5e-05
+missing query
+sample=299, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.6480891704559326, time_p: 0.37403106689453125
+sample=299, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.5466113090515137, time_p: 0.3086724281311035
+sample=299, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4196436405181885, time_p: 0.3066582679748535
+sample=300, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.181323528289795, time_p: 0.3757178783416748
+sample=300, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4232442378997803, time_p: 0.30663013458251953
+sample=300, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4175083637237549, time_p: 0.3080449104309082
+sample=301, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 2.884737968444824, time_p: 0.37784838676452637
+sample=301, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.5195574760437012, time_p: 0.31175947189331055
+sample=301, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4256775379180908, time_p: 0.3077816963195801
+sample=302, epsilon=0.35
+missing query
+sample=302, epsilon=0.0005
+missing query
+sample=302, epsilon=5e-05
+missing query
+sample=303, epsilon=0.35
+missing query
+sample=303, epsilon=0.0005
+missing query
+sample=303, epsilon=5e-05
+missing query
+sample=304, epsilon=0.35
+TimeoutExpired: 304, 0.35
+sample=304, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.5007672309875488, time_p: 0.3733675479888916
+sample=304, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.49350571632385254, time_p: 0.35450220108032227
+sample=305, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.535443305969238, time_p: 0.43589305877685547
+sample=305, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.5095148086547852, time_p: 0.3476283550262451
+sample=305, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5104773044586182, time_p: 0.3318827152252197
+sample=306, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.8313791751861572, time_p: 0.4346752166748047
+sample=306, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4902045726776123, time_p: 0.36079907417297363
+sample=306, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.47411179542541504, time_p: 0.3525114059448242
+sample=307, epsilon=0.35
+missing query
+sample=307, epsilon=0.0005
+missing query
+sample=307, epsilon=5e-05
+missing query
+sample=308, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.3451597690582275, time_p: 0.4083268642425537
+sample=308, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.49100685119628906, time_p: 0.3489265441894531
+sample=308, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5069429874420166, time_p: 0.3438115119934082
+sample=309, epsilon=0.35
+missing query
+sample=309, epsilon=0.0005
+missing query
+sample=309, epsilon=5e-05
+missing query
+sample=310, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.5235915184021, time_p: 0.4498429298400879
+sample=310, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.9013516902923584, time_p: 0.3540380001068115
+sample=310, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5074341297149658, time_p: 0.3385016918182373
+sample=311, epsilon=0.35
+missing query
+sample=311, epsilon=0.0005
+missing query
+sample=311, epsilon=5e-05
+missing query
+sample=312, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.1441357135772705, time_p: 0.42536497116088867
+sample=312, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.47830748558044434, time_p: 0.3588988780975342
+sample=312, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5042059421539307, time_p: 0.3480501174926758
+sample=313, epsilon=0.35
+missing query
+sample=313, epsilon=0.0005
+missing query
+sample=313, epsilon=5e-05
+missing query
+sample=314, epsilon=0.35
+missing query
+sample=314, epsilon=0.0005
+missing query
+sample=314, epsilon=5e-05
+missing query
+sample=315, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.330262899398804, time_p: 0.4313168525695801
+sample=315, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4898691177368164, time_p: 0.366422176361084
+sample=315, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.48096442222595215, time_p: 0.3523259162902832
+sample=316, epsilon=0.35
+missing query
+sample=316, epsilon=0.0005
+missing query
+sample=316, epsilon=5e-05
+missing query
+sample=317, epsilon=0.35
+missing query
+sample=317, epsilon=0.0005
+missing query
+sample=317, epsilon=5e-05
+missing query
+sample=318, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.3488450050354, time_p: 0.42260074615478516
+sample=318, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.506115198135376, time_p: 0.3423638343811035
+sample=318, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5058465003967285, time_p: 0.3475985527038574
+sample=319, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.2836833000183105, time_p: 0.44248390197753906
+sample=319, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.510490894317627, time_p: 0.36560773849487305
+sample=319, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4617290496826172, time_p: 0.3521585464477539
+sample=320, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.336696147918701, time_p: 0.40535902976989746
+sample=320, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4816141128540039, time_p: 0.34784555435180664
+sample=320, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5159139633178711, time_p: 0.3470449447631836
+sample=321, epsilon=0.35
+missing query
+sample=321, epsilon=0.0005
+missing query
+sample=321, epsilon=5e-05
+missing query
+sample=322, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.475196361541748, time_p: 0.44849085807800293
+sample=322, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4642465114593506, time_p: 0.35077524185180664
+sample=322, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4844188690185547, time_p: 0.3699939250946045
+sample=323, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.938845634460449, time_p: 0.4185197353363037
+sample=323, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.474163293838501, time_p: 0.35183262825012207
+sample=323, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4806249141693115, time_p: 0.35214686393737793
+sample=324, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.796721458435059, time_p: 0.4331960678100586
+sample=324, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.48675084114074707, time_p: 0.34693026542663574
+sample=324, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5044071674346924, time_p: 0.37754178047180176
+sample=325, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.409408330917358, time_p: 0.4414048194885254
+sample=325, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.8739616870880127, time_p: 0.33611369132995605
+sample=325, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4756615161895752, time_p: 0.35979151725769043
+sample=326, epsilon=0.35
+missing query
+sample=326, epsilon=0.0005
+missing query
+sample=326, epsilon=5e-05
+missing query
+sample=327, epsilon=0.35
+missing query
+sample=327, epsilon=0.0005
+missing query
+sample=327, epsilon=5e-05
+missing query
+sample=328, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.622852563858032, time_p: 0.4319002628326416
+sample=328, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4936542510986328, time_p: 0.3682417869567871
+sample=328, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.47254204750061035, time_p: 0.36624884605407715
+sample=329, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.660023927688599, time_p: 0.4296875
+sample=329, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.48558807373046875, time_p: 0.3577303886413574
+sample=329, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.47681188583374023, time_p: 0.3330874443054199
+sample=330, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.86014723777771, time_p: 0.37247300148010254
+sample=330, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4187743663787842, time_p: 0.3097195625305176
+sample=330, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4224565029144287, time_p: 0.30560827255249023
+sample=331, epsilon=0.35
+missing query
+sample=331, epsilon=0.0005
+missing query
+sample=331, epsilon=5e-05
+missing query
+sample=332, epsilon=0.35
+missing query
+sample=332, epsilon=0.0005
+missing query
+sample=332, epsilon=5e-05
+missing query
+sample=333, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.609133243560791, time_p: 0.38262248039245605
+sample=333, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.412585973739624, time_p: 0.30944156646728516
+sample=333, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41977739334106445, time_p: 0.3045644760131836
+sample=334, epsilon=0.35
+missing query
+sample=334, epsilon=0.0005
+missing query
+sample=334, epsilon=5e-05
+missing query
+sample=335, epsilon=0.35
+missing query
+sample=335, epsilon=0.0005
+missing query
+sample=335, epsilon=5e-05
+missing query
+sample=336, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.126881837844849, time_p: 0.3765146732330322
+sample=336, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4194209575653076, time_p: 0.31068849563598633
+sample=336, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41139888763427734, time_p: 0.3057413101196289
+sample=337, epsilon=0.35
+missing query
+sample=337, epsilon=0.0005
+missing query
+sample=337, epsilon=5e-05
+missing query
+sample=338, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.815778732299805, time_p: 0.3841540813446045
+sample=338, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.41889476776123047, time_p: 0.3030245304107666
+sample=338, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4192683696746826, time_p: 0.30411696434020996
+sample=339, epsilon=0.35
+missing query
+sample=339, epsilon=0.0005
+missing query
+sample=339, epsilon=5e-05
+missing query
+sample=340, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.686213493347168, time_p: 0.3723421096801758
+sample=340, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4301438331604004, time_p: 0.30556464195251465
+sample=340, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4145684242248535, time_p: 0.30574536323547363
+sample=341, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.2199294567108154, time_p: 0.37364673614501953
+sample=341, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.41603636741638184, time_p: 0.31316351890563965
+sample=341, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4190800189971924, time_p: 0.31464552879333496
+sample=342, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.951257944107056, time_p: 0.37601208686828613
+sample=342, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4155125617980957, time_p: 0.30875134468078613
+sample=342, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.415194034576416, time_p: 0.31198883056640625
+sample=343, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.273158311843872, time_p: 0.3751406669616699
+sample=343, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.43100762367248535, time_p: 0.30857110023498535
+sample=343, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42928409576416016, time_p: 0.30716371536254883
+sample=344, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.922788381576538, time_p: 0.3822367191314697
+sample=344, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.41268086433410645, time_p: 0.3096189498901367
+sample=344, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4157116413116455, time_p: 0.3080563545227051
+sample=345, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.1362433433532715, time_p: 0.3838796615600586
+sample=345, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.5227270126342773, time_p: 0.3054380416870117
+sample=345, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4219193458557129, time_p: 0.3130528926849365
+sample=346, epsilon=0.35
+missing query
+sample=346, epsilon=0.0005
+missing query
+sample=346, epsilon=5e-05
+missing query
+sample=347, epsilon=0.35
+missing query
+sample=347, epsilon=0.0005
+missing query
+sample=347, epsilon=5e-05
+missing query
+sample=348, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.942828178405762, time_p: 0.3740348815917969
+sample=348, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.41489315032958984, time_p: 0.30715036392211914
+sample=348, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4203989505767822, time_p: 0.30431389808654785
+sample=349, epsilon=0.35
+missing query
+sample=349, epsilon=0.0005
+missing query
+sample=349, epsilon=5e-05
+missing query
+sample=350, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.3056793212890625, time_p: 0.3764185905456543
+sample=350, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4169731140136719, time_p: 0.3074533939361572
+sample=350, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41492533683776855, time_p: 0.3066227436065674
+sample=351, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.685761213302612, time_p: 0.3758220672607422
+sample=351, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4205207824707031, time_p: 0.3049135208129883
+sample=351, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41782212257385254, time_p: 0.3062586784362793
+sample=352, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.13978910446167, time_p: 0.38362741470336914
+sample=352, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 6.19347357749939, time_p: 0.3086113929748535
+sample=352, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4203648567199707, time_p: 0.3059711456298828
+sample=353, epsilon=0.35
+missing query
+sample=353, epsilon=0.0005
+missing query
+sample=353, epsilon=5e-05
+missing query
+sample=354, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.464589834213257, time_p: 0.37013959884643555
+sample=354, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.42136621475219727, time_p: 0.3027219772338867
+sample=354, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41230201721191406, time_p: 0.3137631416320801
+sample=355, epsilon=0.35
+missing query
+sample=355, epsilon=0.0005
+missing query
+sample=355, epsilon=5e-05
+missing query
+sample=356, epsilon=0.35
+missing query
+sample=356, epsilon=0.0005
+missing query
+sample=356, epsilon=5e-05
+missing query
+sample=357, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.0385913848876953, time_p: 0.36946654319763184
+sample=357, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4229423999786377, time_p: 0.30595922470092773
+sample=357, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41741108894348145, time_p: 0.3070034980773926
+sample=358, epsilon=0.35
+missing query
+sample=358, epsilon=0.0005
+missing query
+sample=358, epsilon=5e-05
+missing query
+sample=359, epsilon=0.35
+missing query
+sample=359, epsilon=0.0005
+missing query
+sample=359, epsilon=5e-05
+missing query
+sample=360, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.674201488494873, time_p: 0.38319945335388184
+sample=360, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4216492176055908, time_p: 0.30579042434692383
+sample=360, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42739272117614746, time_p: 0.30420970916748047
+sample=361, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.832973480224609, time_p: 0.3765573501586914
+sample=361, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.42115211486816406, time_p: 0.3075287342071533
+sample=361, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.41790008544921875, time_p: 0.3079671859741211
+sample=362, epsilon=0.35
+missing query
+sample=362, epsilon=0.0005
+missing query
+sample=362, epsilon=5e-05
+missing query
+sample=363, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.210782289505005, time_p: 0.3712639808654785
+sample=363, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4112212657928467, time_p: 0.30420446395874023
+sample=363, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42120361328125, time_p: 0.30353808403015137
+sample=364, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 7.069678068161011, time_p: 0.38158154487609863
+sample=364, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4422791004180908, time_p: 0.3165092468261719
+sample=364, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.46573376655578613, time_p: 0.41399669647216797
+sample=365, epsilon=0.35
+missing query
+sample=365, epsilon=0.0005
+missing query
+sample=365, epsilon=5e-05
+missing query
+sample=366, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.888310432434082, time_p: 0.3898136615753174
+sample=366, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 1.6146175861358643, time_p: 0.35852527618408203
+sample=366, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.7953028678894043, time_p: 0.43889379501342773
+sample=367, epsilon=0.35
+missing query
+sample=367, epsilon=0.0005
+missing query
+sample=367, epsilon=5e-05
+missing query
+sample=368, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.7294628620147705, time_p: 0.3762795925140381
+sample=368, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4178507328033447, time_p: 0.30550384521484375
+sample=368, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5006985664367676, time_p: 0.30735182762145996
+sample=369, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.346880674362183, time_p: 0.3992626667022705
+sample=369, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.5241832733154297, time_p: 0.3473372459411621
+sample=369, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.5343685150146484, time_p: 0.4778902530670166
+sample=370, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.5527637004852295, time_p: 0.3889925479888916
+sample=370, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.42981505393981934, time_p: 0.31270575523376465
+sample=370, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.4456617832183838, time_p: 0.3254129886627197
+sample=371, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.957589864730835, time_p: 0.4131011962890625
+sample=371, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.6034302711486816, time_p: 0.3268113136291504
+sample=371, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.45348429679870605, time_p: 0.31455159187316895
+sample=372, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 6.341486215591431, time_p: 0.3921482563018799
+sample=372, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4379096031188965, time_p: 0.32190465927124023
+sample=372, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.43937182426452637, time_p: 0.31361889839172363
+sample=373, epsilon=0.35
+missing query
+sample=373, epsilon=0.0005
+missing query
+sample=373, epsilon=5e-05
+missing query
+sample=374, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 4.280293703079224, time_p: 0.38459062576293945
+sample=374, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.45241713523864746, time_p: 0.31250500679016113
+sample=374, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42511963844299316, time_p: 0.3123629093170166
+sample=375, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.9049177169799805, time_p: 0.4041118621826172
+sample=375, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4455714225769043, time_p: 0.31366658210754395
+sample=375, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42392492294311523, time_p: 0.3102879524230957
+sample=376, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 3.2239716053009033, time_p: 0.38248348236083984
+sample=376, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4365231990814209, time_p: 0.3306252956390381
+sample=376, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42613673210144043, time_p: 0.3179333209991455
+sample=377, epsilon=0.35
+res_f: sat, res_p: sat, time_f: 5.66295862197876, time_p: 0.3810577392578125
+sample=377, epsilon=0.0005
+res_f: unsat, res_p: unsat, time_f: 0.4323232173919678, time_p: 0.30888843536376953
+sample=377, epsilon=5e-05
+res_f: unsat, res_p: unsat, time_f: 0.42539405822753906, time_p: 0.308807373046875

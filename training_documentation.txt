@@ -1,13 +1,13 @@
 This document include details about some training methods, parameters and results:
 
 CL - cascade learning (adding new layer after convergence of last layer)
-    - train only the i'th layer
+    - train only the i'th layer (learning rate = 0 for all other layers)
 CGT - cascade learning, but train all preceding layers
     - with equal learning rate
     - with exponential degrade in learning rate
 Regarding CL, we examine 2 options how to train the network:
     1. layer i is not exist until stage i (forward pass does not include it)
-    2. layer i is part of the forward pass but the learning rate is 0
+    2. layer i is part of the forward pass but its learning rate is 0
     We saw that option 2 acheives better accuracy
 
 

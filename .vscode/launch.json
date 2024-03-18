@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File with my args",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": [
+                "--config", "/tmp/abcrown/abcrown2.yaml",
+                "--onnx_path", "/tmp/net.onnx", 
+                "--input_shape", "784",
+                "--device", "cpu",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Current File with UserName arg",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["${env:USERNAME}"],
+            "console": "integratedTerminal"
+        }
+    ]
+}
